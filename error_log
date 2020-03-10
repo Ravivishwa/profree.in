@@ -1,0 +1,96 @@
+[06-Aug-2019 16:45:26 Asia/Karachi] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CI_Session::userdata(), 0 passed in /home/profree/public_html/app/views/playment_plan_view.php on line 28 and exactly 1 expected in /home/profree/public_html/sys/libraries/Session.php:431
+Stack trace:
+#0 /home/profree/public_html/app/views/playment_plan_view.php(28): CI_Session->userdata()
+#1 /home/profree/public_html/sys/core/Loader.php(833): include('/home/profree/p...')
+#2 /home/profree/public_html/sys/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#3 /home/profree/public_html/app/controllers/payment.php(61): CI_Loader->view('playment_plan_v...', Array)
+#4 /home/profree/public_html/sys/core/CodeIgniter.php(359): Payment->index()
+#5 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#6 {main}
+  thrown in /home/profree/public_html/sys/libraries/Session.php on line 431
+[06-Aug-2019 16:45:33 Asia/Karachi] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CI_Session::userdata(), 0 passed in /home/profree/public_html/app/views/playment_plan_view.php on line 28 and exactly 1 expected in /home/profree/public_html/sys/libraries/Session.php:431
+Stack trace:
+#0 /home/profree/public_html/app/views/playment_plan_view.php(28): CI_Session->userdata()
+#1 /home/profree/public_html/sys/core/Loader.php(833): include('/home/profree/p...')
+#2 /home/profree/public_html/sys/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#3 /home/profree/public_html/app/controllers/payment.php(61): CI_Loader->view('playment_plan_v...', Array)
+#4 /home/profree/public_html/sys/core/CodeIgniter.php(359): Payment->index()
+#5 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#6 {main}
+  thrown in /home/profree/public_html/sys/libraries/Session.php on line 431
+[06-Aug-2019 16:45:38 Asia/Karachi] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CI_Session::userdata(), 0 passed in /home/profree/public_html/app/views/playment_plan_view.php on line 28 and exactly 1 expected in /home/profree/public_html/sys/libraries/Session.php:431
+Stack trace:
+#0 /home/profree/public_html/app/views/playment_plan_view.php(28): CI_Session->userdata()
+#1 /home/profree/public_html/sys/core/Loader.php(833): include('/home/profree/p...')
+#2 /home/profree/public_html/sys/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#3 /home/profree/public_html/app/controllers/payment.php(61): CI_Loader->view('playment_plan_v...', Array)
+#4 /home/profree/public_html/sys/core/CodeIgniter.php(359): Payment->index()
+#5 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#6 {main}
+  thrown in /home/profree/public_html/sys/libraries/Session.php on line 431
+[06-Aug-2019 18:19:01 Asia/Karachi] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/profree/public_html/app/views/playment_plan_view.php on line 79
+[08-Aug-2019 11:27:53 Asia/Karachi] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Property::index(), 0 passed in /home/profree/public_html/sys/core/CodeIgniter.php on line 359 and at least 1 expected in /home/profree/public_html/app/controllers/property.php:50
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(359): Property->index()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 50
+[08-Aug-2019 07:22:45 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:23:54 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:26:31 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:26:58 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:27:00 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:27:03 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 07:27:06 Etc/GMT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/profree/public_html/app/controllers/property.php:2
+Stack trace:
+#0 /home/profree/public_html/sys/core/CodeIgniter.php(250): include()
+#1 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#2 {main}
+  thrown in /home/profree/public_html/app/controllers/property.php on line 2
+[08-Aug-2019 08:03:31 Etc/GMT] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/profree/public_html/app/controllers/property.php on line 159
+[08-Aug-2019 08:03:37 Etc/GMT] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/profree/public_html/app/controllers/property.php on line 159
+[08-Aug-2019 08:03:55 Etc/GMT] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/profree/public_html/app/controllers/property.php on line 159
+[08-Aug-2019 08:09:36 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/profree/public_html/app/models/project_model.php:17
+Stack trace:
+#0 /home/profree/public_html/app/controllers/login.php(41): Project_model->projectName()
+#1 /home/profree/public_html/sys/core/CodeIgniter.php(359): Login->index()
+#2 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#3 {main}
+  thrown in /home/profree/public_html/app/models/project_model.php on line 17
+[08-Aug-2019 08:09:49 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/profree/public_html/app/models/project_model.php:17
+Stack trace:
+#0 /home/profree/public_html/app/controllers/login.php(41): Project_model->projectName()
+#1 /home/profree/public_html/sys/core/CodeIgniter.php(359): Login->index()
+#2 /home/profree/public_html/index.php(201): require_once('/home/profree/p...')
+#3 {main}
+  thrown in /home/profree/public_html/app/models/project_model.php on line 17

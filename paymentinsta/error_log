@@ -1,0 +1,105 @@
+[06-Aug-2019 12:14:14 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:14:14 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:14:14 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:14:14 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:14:14 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:14:47 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:14:47 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:14:47 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:14:47 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:14:47 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:14:52 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:14:52 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:14:52 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:14:52 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:14:52 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:14:57 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:14:57 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:14:57 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:14:57 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:14:57 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:15:45 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:15:45 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:15:45 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:15:45 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:15:45 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:15:51 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[06-Aug-2019 12:15:51 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[06-Aug-2019 12:15:51 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[06-Aug-2019 12:15:51 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[06-Aug-2019 12:15:51 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[06-Aug-2019 12:46:21 Etc/GMT] PHP Notice:  Undefined index: userid in /home/profree/public_html/paymentinsta/pay.php on line 7
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: product_name in /home/profree/public_html/paymentinsta/pay.php on line 2
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/pay.php on line 3
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: name in /home/profree/public_html/paymentinsta/pay.php on line 4
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: phone in /home/profree/public_html/paymentinsta/pay.php on line 5
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: email in /home/profree/public_html/paymentinsta/pay.php on line 6
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: userid in /home/profree/public_html/paymentinsta/pay.php on line 7
+[08-Aug-2019 10:55:12 Etc/GMT] PHP Notice:  Undefined index: plan_id in /home/profree/public_html/paymentinsta/pay.php on line 8
+[08-Aug-2019 13:36:22 Etc/GMT] PHP Warning:  Illegal string offset 'longurl' in /home/profree/public_html/paymentinsta/pay.php on line 38
+[08-Aug-2019 13:36:54 Etc/GMT] PHP Warning:  Illegal string offset 'longurl' in /home/profree/public_html/paymentinsta/pay.php on line 38
+[08-Aug-2019 13:38:02 Etc/GMT] PHP Warning:  Illegal string offset 'longurl' in /home/profree/public_html/paymentinsta/pay.php on line 38
+[08-Aug-2019 13:55:27 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 40
+[08-Aug-2019 13:56:06 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 40
+[08-Aug-2019 13:56:47 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 40
+[08-Aug-2019 13:57:11 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 40
+[08-Aug-2019 15:55:06 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 15:55:06 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 15:57:03 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 15:57:03 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 15:58:37 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 15:58:37 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Notice:  Undefined index: userid in /home/profree/public_html/paymentinsta/thankyou.php on line 49
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Notice:  Undefined index: plan_id in /home/profree/public_html/paymentinsta/thankyou.php on line 50
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Notice:  Undefined index: payment_request_id in /home/profree/public_html/paymentinsta/thankyou.php on line 54
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Notice:  Undefined index: payment_status in /home/profree/public_html/paymentinsta/thankyou.php on line 55
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[08-Aug-2019 16:12:48 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 02:15:00 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 03:37:01 Etc/GMT] PHP Notice:  Undefined variable: headers in /home/profree/public_html/paymentinsta/webhook.php on line 43
+[09-Aug-2019 03:37:08 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 03:37:08 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 03:37:21 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 03:37:21 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 03:55:19 Etc/GMT] PHP Notice:  Undefined variable: headers in /home/profree/public_html/paymentinsta/webhook.php on line 43
+[09-Aug-2019 03:55:21 Etc/GMT] PHP Notice:  Undefined variable: api in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 03:55:21 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function paymentRequestStatus() on null in /home/profree/public_html/paymentinsta/thankyou.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/profree/public_html/paymentinsta/thankyou.php on line 58
+[09-Aug-2019 04:05:14 Etc/GMT] PHP Notice:  Undefined variable: headers in /home/profree/public_html/paymentinsta/webhook.php on line 43
+[09-Aug-2019 07:23:19 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/paymentform.php on line 2
+[09-Aug-2019 07:23:19 Etc/GMT] PHP Notice:  Undefined variable: totl_pay in /home/profree/public_html/paymentinsta/paymentform.php on line 58
+[09-Aug-2019 07:24:16 Etc/GMT] PHP Notice:  Undefined index: price in /home/profree/public_html/paymentinsta/paymentform.php on line 2
+[09-Aug-2019 07:24:16 Etc/GMT] PHP Notice:  Undefined variable: totl_pay in /home/profree/public_html/paymentinsta/paymentform.php on line 58
+[09-Aug-2019 07:27:57 Etc/GMT] PHP Notice:  Undefined variable: totl_pay in /home/profree/public_html/paymentinsta/paymentform.php on line 58
+[09-Aug-2019 07:40:15 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 07:47:06 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 08:20:23 Etc/GMT] PHP Notice:  Undefined variable: headers in /home/profree/public_html/paymentinsta/webhook.php on line 43
+[09-Aug-2019 09:56:11 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 09:56:28 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 09:56:36 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 09:56:57 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 09:59:05 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 09:59:12 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 10:05:30 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 10:05:52 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
+[09-Aug-2019 10:06:54 Etc/GMT] PHP Notice:  Undefined index: payment_request in /home/profree/public_html/paymentinsta/pay.php on line 43
