@@ -16,13 +16,13 @@ class Login extends CI_Controller {
 
 	 * 		http://example.com/index.php/welcome
 
-	 *	- or -  
+	 *	- or -
 
 	 * 		http://example.com/index.php/welcome/index
 
 	 *	- or -
 
-	 * Since this controller is set as the default controller in 
+	 * Since this controller is set as the default controller in
 
 	 * config/routes.php, it's displayed at http://example.com/
 
@@ -37,7 +37,7 @@ class Login extends CI_Controller {
 	 */
 
 	public function index(){
-		//echo $this->encrypt->decode('JU2rNoxrSxl1y+bDAqXvZOLQZYe+h2EwXsrDtHJYYbad4bpgz9B4YfKyHYKNJZbvYafyN5Zd371O6VjPR47Hxw==');exit;				
+		//echo $this->encrypt->decode('JU2rNoxrSxl1y+bDAqXvZOLQZYe+h2EwXsrDtHJYYbad4bpgz9B4YfKyHYKNJZbvYafyN5Zd371O6VjPR47Hxw==');exit;
 		$data['title'] = $this->project_model->projectName().' :: Login';
 		$data['Message'] = '<font color="#666666">Enter email and password!</font>';
 		$data['userName'] = '';
@@ -54,14 +54,14 @@ class Login extends CI_Controller {
 				if(!isSuperAdmin()){
 					redirect(base_url().'dashboard', 'refersh');
 				}
-				redirect(base_url().'admin/dashboard', 'refersh');								
+				redirect(base_url().'admin/dashboard', 'refersh');
 			}
 			$data['Message'] = 'Invalid email address or password!';
 		}
 		$this->load->view('login_view', $data);
 	}
 
-	
+
 
 	private function validateUserInfo($userName, $password){
 		$dbInfo = $this->general_model->getSingleData_Simple($userName, 'email', 'tbl_agents');

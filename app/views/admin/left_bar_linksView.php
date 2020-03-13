@@ -5,19 +5,19 @@ if(isSuperAdmin()){
 
     <ul>
 
-    	
 
-        <li><a href="<?=base_url()?>admin/dashboard" <?=selectLink('dashboard', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/dash.jpg" />Dashboard</a></li>        
 
-        
+        <li><a href="<?=base_url()?>admin/dashboard" <?=selectLink('dashboard', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/dash.jpg" />Dashboard</a></li>
+
+
 		<?php
 		if(isSuperAdmin()){
 		?>
 				<li><a href="<?=base_url()?>admin/agents" <?=selectLink('agents', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/agents2.png" />Manage Agents / Memebers</a></li>
 			<?php
 		}
-			
-		
+
+
 		if($this->general_model->isModuleEnabled('property')){
 
 		?>
@@ -27,7 +27,7 @@ if(isSuperAdmin()){
       	<?php
 
 		}
-		
+
 		if($this->general_model->isModuleEnabled('favourites')){
 
 		?>
@@ -37,7 +37,7 @@ if(isSuperAdmin()){
       	<?php
 
 		}
-		
+
 		if($this->general_model->isModuleEnabled('content')){
 			?>
 
@@ -46,7 +46,7 @@ if(isSuperAdmin()){
 			<?php
 
 		}
-		
+
 		if($this->general_model->isModuleEnabled('payment')){?>
 
 				<li><a href="<?=base_url()?>admin/payment" <?=selectLink('payment', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/content1.png" />Payment Plans</a></li>
@@ -54,18 +54,18 @@ if(isSuperAdmin()){
 			<?php
 
 		}
-		
+
 		if($this->general_model->isModuleEnabled('news')){?>
 
 				<li><a href="<?=base_url()?>admin/news" <?=selectLink('news', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/news.png" />Manage Advertisement</a></li>
 
 			<?php
 
-		}		
-		
+		}
 
-		
-		
+
+
+
 
 		if($this->general_model->isModuleEnabled('socialLinks')){
 
@@ -76,9 +76,9 @@ if(isSuperAdmin()){
       	<?php
 
 		}
-		
-	
-		
+
+
+
 		if($this->general_model->isModuleEnabled('cities')){
 
 		?>
@@ -88,19 +88,21 @@ if(isSuperAdmin()){
         <?php
 
 		}
-				
+
 		if($this->general_model->isModuleEnabled('countries')){
 		?>
 
         	<li><a href="<?=base_url()?>admin/countries" <?=selectLink('countries', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/countries.png" />Manage Countries</a></li>
         <?php
-		}	
-				
+		}
+
 		if(isSuperAdmin()){
 
 		?>
 
         	<li><a href="<?=base_url()?>admin/settings" <?=selectLink('settings', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/settings.png" />Settings</a></li>
+
+        	<li><a href="<?=base_url()?>admin/pvcpayment" <?=selectLink('pvcpayment', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/settings.png" />PVC Print Settings</a></li>
 
         <?php
 

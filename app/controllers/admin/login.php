@@ -16,13 +16,13 @@ class Login extends CI_Controller {
 
 	 * 		http://example.com/index.php/welcome
 
-	 *	- or -  
+	 *	- or -
 
 	 * 		http://example.com/index.php/welcome/index
 
 	 *	- or -
 
-	 * Since this controller is set as the default controller in 
+	 * Since this controller is set as the default controller in
 
 	 * config/routes.php, it's displayed at http://example.com/
 
@@ -38,16 +38,16 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		//echo $this->encrypt->decode('JU2rNoxrSxl1y+bDAqXvZOLQZYe+h2EwXsrDtHJYYbad4bpgz9B4YfKyHYKNJZbvYafyN5Zd371O6VjPR47Hxw==');exit;				
+		//echo $this->encrypt->decode('JU2rNoxrSxl1y+bDAqXvZOLQZYe+h2EwXsrDtHJYYbad4bpgz9B4YfKyHYKNJZbvYafyN5Zd371O6VjPR47Hxw==');exit;
 		$data['pageTitle'] = $this->project_model->projectName().' :: Login';
 
 		$data['Message'] = '<font color="#666666">Enter email and password!</font>';
 
 		$data['userName'] = '';
 
-		$data['password'] = '';		
+		$data['password'] = '';
 
-		
+
 
 		if($this->isUserLoggedin()){
 
@@ -55,11 +55,11 @@ class Login extends CI_Controller {
 
 		}
 
-		
+
 
 		$isFormSubmitted = $this->input->post('GetUserLogin');
 
-		
+
 
 		if((bool)($isFormSubmitted) == TRUE){
 
@@ -67,11 +67,11 @@ class Login extends CI_Controller {
 
 			$data['password'] = $this->input->post('password');
 
-			
+
 
 			if($this->validateUserInfo($data['userName'], $data['password'])){
 
-				
+
 
 				$redirect_to = $this->session->userdata('back_from_login');
 
@@ -81,7 +81,7 @@ class Login extends CI_Controller {
 
 					redirect($redirect_to, 'refresh');
 
-				} 
+				}
 
 				else {
 					if(!isSuperAdmin()){
@@ -89,7 +89,7 @@ class Login extends CI_Controller {
 					}
 					redirect(base_url().'admin/dashboard', 'refersh');
 
-				}				
+				}
 
 			}
 
@@ -97,20 +97,20 @@ class Login extends CI_Controller {
 
 		}
 
-			
+
 
 		$this->load->view('admin/loginView', $data);
 
 	}
 
-	
+
 
 	private function validateUserInfo($userName, $password){
 
 
 		$dbInfo = $this->general_model->getSingleData_Simple($userName, 'email', 'tbl_agents');
 
-		
+
 
 		if($dbInfo != '0'){
 
@@ -122,7 +122,7 @@ class Login extends CI_Controller {
 
 				$this->session->set_userdata($sessData);
 
-				
+
 
 				return true;
 
@@ -130,40 +130,40 @@ class Login extends CI_Controller {
 
 		}
 
-		
+
 
 		return false;
 
-		
+
 
 	}
 
-	
+
 
 	private function isUserLoggedin(){
 
 		if((bool)($this->session->userdata('email')) == TRUE && (bool)($this->session->userdata('pass')) == TRUE){
-					
+
 			$userName = $this->session->userdata('email');
-	
+
 			$password = $this->session->userdata('pass');
-	
-			
-	
+
+
+
 			$dbInfo = $this->general_model->getSingleData_Simple($userName, 'email', 'tbl_agents');
-	
-					
-	
+
+
+
 			if($this->encrypt->decode($dbInfo->password) == $password && $userName == $dbInfo->email){
-	
-				
-	
+
+
+
 				return true;
-	
+
 			}
 		}
 
-		
+
 
 		return false;
 
