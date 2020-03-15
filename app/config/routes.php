@@ -105,7 +105,13 @@ $route['admin'] = 'admin/login';
 /*******************	Front End Links		*********************************/
 $route['pvcprint'] = 'pvcprint/pvcprint';
 $route['pvcprint/aadhaarpvc'] = 'pvcprint/aadhaarpvc';
-$route['pvcprint/aadhaarpvc/pay'] = 'pvcprint/pay';
+$route['pvcprint/cmhealthpvc'] = 'pvcprint/cmhealthpvc';
+$route['pvcprint/pancardpvc'] = 'pvcprint/pancardpvc';
+$route['pvcprint/pmjaypvc'] = 'pvcprint/pmjaypvc';
+$route['pvcprint/pmsmypvc'] = 'pvcprint/pmsmypvc';
+$route['pvcprint/tnsmatpvc'] = 'pvcprint/tnsmatpvc';
+$route['pvcprint/uanpvc'] = 'pvcprint/uanpvc';
+$route['pvcprint/pay'] = 'pvcprint/pay';
 $route['property/add'] = 'property/add';
 $route['property/update/(:any)'] = 'property/update/$1';
 $route['property/user_listing'] = 'property/user_listing';

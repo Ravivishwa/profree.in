@@ -12,8 +12,8 @@
 
 <script type="text/javascript" src="<?=base_url()?>btPublic/admin/js/general.js"></script>
 <script type="text/javascript" src="<?=base_url()?>btPublic/admin/js/payment.js"></script>
-<script type="text/javascript" src="<?=base_url()?>btPublic/venders/ckeditor/ckeditor.js"></script>
-
+<script type="text/javascript" src="<?=base_url()?>btPublic/admin/js/payment.js"></script>
+<script type="text/javascript" src="<?=base_url()?>btPublic/js/vendor/jquery-3.2.1.min.js"></script>
 </head>
 
 
@@ -44,32 +44,45 @@
 
                 <label>Title: *</label>
                 <div class="clear"></div>
-            	<input type="text" name="title" id="title" class="field2" value="<?=$title?>" onkeypress="claerMessage();" />
+            	<!-- <input type="text" name="title" id="title" class="field2" value="<?=$title?>" onkeypress="claerMessage();" /> -->
+                <select class="form-control"  name="title" id="title"  required readonly>
+                    <option value="" > Select PVC Type </option>
+                    <option value="AADHAR PVC Print" > AADHAR PVC Print </option>
+                    <option value="TN SMART PVC" > TN SMART PVC </option>
+                    <option value="PANCARD PVC" > PANCARD PVC </option>
+                    <option value="CM HEALTH INS PVC" > CM HEALTH INS PVC </option>
+                    <option value="UAN (EPF) PVC" > UAN (EPF) PVC </option>
+                    <option value="PMJAY PVC" > PMJAY PVC </option>
+                    <option value="PM-SMY PVC" > PM-SMY PVC </option>
+                </select> 
                 <?php echo form_error('title', '<div class="error" id="titleError">', '</div>');?>
                	<div class="pixel_space3"></div>
                 <div class="clear"></div>
 
+
+
+
                 <label>Price (Printing Charges): *</label>
                 <div class="clear"></div>
-            	<?php echo $site_currency;?> <input type="text" name="pvcprice" id="pvcprice" class="field2 pvcprice" value="<?=$price?>" required />
+            	<?php echo $site_currency;?> <input type="number" name="pvcprice" id="pvcprice" class="field2 pvcprice" value="<?=$price?>" required />
                	<div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Packaging,Handling and Postal Charges *</label>
                 <div class="clear"></div>
-                <input type="text" name="others" id="others" class="field2 others" value="<?=$price?>" required />
+                <input type="number" name="others" id="others" class="field2 others" value="<?=$others?>" required />
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Tax (in %) *</label>
                 <div class="clear"></div>
-                <input type="text" name="tax" id="tax" class="field2" value="<?=$price?$price:18?>" required />
+                <input type="number" name="tax" id="tax" class="field2" value="<?=$tax?$tax:18?>" required />
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Total *</label>
                 <div class="clear"></div>
-                <input type="text" name="total" id="total" class="field2" value="<?=$price?>" required />
+                <input type="text" name="total" id="total" class="field2" value="<?=$total?>" required />
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
@@ -156,4 +169,16 @@ filebrowserFlashUploadUrl : '<?php echo $path; ?>core/connector/php/connector.ph
 </body>
 
 </html>
+<script>
+    $('#pvcprice,#others,#tax').on('keyup',function(event) {
+        var tax = isNaN(parseInt($('#tax').val())) ? 0 : parseInt($('#tax').val());
+        var pvcprice = isNaN(parseInt($('#pvcprice').val())) ? 0 : parseInt($('#pvcprice').val());
+        var others = isNaN(parseInt($('#others').val())) ? 0 : parseInt($('#others').val());
+        var total = pvcprice+others
+        var gst = (total*tax)/100
+        var totalWithtax = gst+total
+        $('#total').val(totalWithtax)
+    });
+
+</script>
 

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <script type="text/javascript"src="code.jquery.com/jquery-1.10.2.min.js"></script>
     <!-- Bootstrap -->
     <link href="<?=base_url().'btPublic/html/'?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url().'btPublic/html/'?>css/font-awesome.min.css" rel="stylesheet">

@@ -4,12 +4,12 @@
 		<?=$this->load->view('pvcprint/include/header')?>
 
 		<!-- Page Conent -->
-	   <div class="container-fluid">
-	 <div class="container-fluid">
-	  <h2 class="text-center aadhar-content pt-5" ><u>APPLY FOR AADHAR PVC CARD PRINT</u></h2>
-	  <form>
-	   <div class="form-group-row">
-			<div class="form-group row  pt-5  text-center">
+<div class="container-fluid">
+    <div class="container">
+	  <h2 class="text-center aadhar-content pt-5" ><u>APPLY FOR <?=$heading?></u></h2>
+	  <form action="<?=base_url().'pvcprint/pay?p='.$service?>" method="post" enctype="multipart/form-data">
+		<div class="form-group-row">
+			<div class="form-group row pt-3	 text-center">
 			   <label for="staticEmail" class="col-form-label col-sm-2 aadhar-label">Name</label>
 				<div class="col-sm-4 ">
 				   <input type="text" class="form-control" id="staticEmail" >
@@ -18,8 +18,8 @@
 				<div class="col-sm-3">
 				   <input type="tel" id="inputAddress" class="form-control" >
 				</div>
-	      </div>
-	   </div>
+		    </div>
+	    </div>
 	   <div class="form-group-row pt-3 ">
          <div class="form-group row  text-center">
          	  <label  class="col-form-label col-sm-2 aadhar-label">Address For Portal</label>
@@ -37,11 +37,15 @@
          </div>
 	   </div> 
         <div class="form-group pb-5">
-           <label class="upload-aadhar">Upload E Aadhar:</label>
+           <label class="upload-aadhar">Upload File:</label>
            <input type="file" id='real-life' name="myfile" hidden/>
             <button type="button" id="custom-button" class="btn btn-outline-dark btn-lg btn-block">
             	<i class="fa fa-plus pd-5"></i> Upload</button>
             <span id="custom-text">No file choosen yet</span>
+
+            <div class="container text-center pt-4">
+				<button type="submit" class="btn btn-success btn-lg">Make Payment</button>
+			</div>
         </div>
 	  </form>
 	</div>

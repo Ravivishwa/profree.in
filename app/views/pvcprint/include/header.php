@@ -70,28 +70,28 @@
 									<a href="about-us.html">ABOUT US</a>
 								</li>
 								<li class="cr-dropdown">
-									<a href="services.html">SERVICE</a>
+									<a href="<?=base_url().'pvcprint/aadhaarpvc'?>">SERVICE</a>
 									<ul class="cr-dropdown-menu">
 										<li>
-											<a href="<?=base_url().'pvcprint/aadhaarpvc'?>">AADHAR PVC</a>
+											<a href="<?=base_url().'pvcprint/aadhaarpvc'?>">Aadhar PVC Print</a>
 										</li>
 										<li>
-											<a href="services.html">TN SMART PVC</a>
+											<a href="<?=base_url().'pvcprint/tnsmatpvc'?>">TN SMART PVC</a>
 										</li>
 										<li>
-											<a href="services.html">PANCARD PVC</a>
+											<a href="<?=base_url().'pvcprint/pancardpvc'?>">PANCARD PVC</a>
 										</li>
 										<li>
-											<a href="services.html">CM HELTH INS PVC</a>
+											<a href="<?=base_url().'pvcprint/cmhealthpvc'?>">CM HEALTH INS PVC</a>
 										</li>
 										<li>
-											<a href="services.html">UAN (EPF) VC</a>
+											<a href="<?=base_url().'pvcprint/uanpvc'?>">UAN (EPF) PVC</a>
 										</li>
 										<li>
-											<a href="services.html">PMJAY PVC</a>
+											<a href="<?=base_url().'pvcprint/pmjaypvc'?>">PMJAY PVC</a>
 										</li>
 										<li>
-											<a href="single-service.html">PM-SMY PVC</a>
+											<a href="<?=base_url().'pvcprint/pmsmypvc'?>">PM-SMY PVC</a>
 										</li>
 									</ul>
 								</li>

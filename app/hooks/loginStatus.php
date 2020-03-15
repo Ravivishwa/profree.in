@@ -32,6 +32,7 @@ class LoginStatus {
 				($segment_1 == 'admin' && $segment_2 == "favourites") ||
 				($segment_1 == 'admin' && $segment_2 == "content") ||
 				($segment_1 == 'admin' && $segment_2 == "payment") ||
+				($segment_1 == 'admin' && $segment_2 == "pvcpayment") ||
 				($segment_1 == 'admin' && $segment_2 == "news") ||
 				($segment_1 == 'admin' && $segment_2 == "newsLetters") ||
 				($segment_1 == 'admin' && $segment_2 == "fileUpload") ||

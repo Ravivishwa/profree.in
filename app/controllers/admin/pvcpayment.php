@@ -19,10 +19,10 @@ class Pvcpayment extends CI_Controller {
     private $Table = 'tbl_pvcpayment_options';
     private $sortBy = 'title';
     private $sortType = 'asc';
-    private $sortBySession = 'payment_orderBy';
-    private $sortTypeSession = 'payment_orderType';
+    private $sortBySession = 'pvcpayment_orderBy';
+    private $sortTypeSession = 'pvcpayment_orderType';
 
-    private $SEARCH_SESSION = 'paymentSEARCH_SESS';
+    private $SEARCH_SESSION = 'pvcpaymentSEARCH_SESS';
     private $searchString = '';
     /************		Image Processing	******************/
     private $imagePath = '../btPublic/bt-uploads/';
@@ -45,7 +45,7 @@ class Pvcpayment extends CI_Controller {
         $data['heading'] = 'PVC Payment Plan';
         $data['pageName'] = 'pvcpayment';
         $data['site_currency'] = $this->general_model->single_value("ID = '1'", 'currency', 'tbl_settings');
-        $config['base_url'] = base_url().'admin/payment/p/';
+        $config['base_url'] = base_url().'admin/pvcpayment/p/';
         $config['total_rows'] = $this->general_model->getTotalDataSimple('ID', $this->Table);
 
         $data['sessionSearch'] = $this->SEARCH_SESSION;
@@ -169,7 +169,7 @@ class Pvcpayment extends CI_Controller {
 
         $this->addSort($sortBy, $newSortType);
 
-        redirect(base_url().'admin/payment','refresh');
+        redirect(base_url().'admin/pvcpayment','refresh');
     }
 
 
@@ -194,7 +194,7 @@ class Pvcpayment extends CI_Controller {
             $data['title'] = $this->input->post('title');
             $data['description'] = $this->input->post('description');
             $data['shortDescription'] = $this->input->post('shortDescription');
-            $data['price'] = $this->input->post('price');
+            $data['price'] = $this->input->post('pvcprice');
             $data['others'] = $this->input->post('others');
             $data['tax'] = $this->input->post('tax');
             $data['total'] = $this->input->post('total');
@@ -227,14 +227,14 @@ class Pvcpayment extends CI_Controller {
                 $agentId = $this->session->userdata('agentId');
                 $Date = getCurrentDate();
                 $Time = getCurrentTime();
-                $DbFieldsAry = array('agentId', 'title', 'shortDescription', 'description', 'price', 'properties', 'time_period', 'picture', 'date', 'status');
-                $InfoAry = array($agentId, $data['title'], $data['shortDescription'], $data['description'], $data['price'], $data['properties'], $data['time_period'], $image_name, $Date, 'YES');
+                $DbFieldsAry = array('agentId', 'title', 'shortDescription', 'description', 'price', 'others','tax','total','properties', 'time_period', 'picture', 'date', 'status');
+                $InfoAry = array($agentId, $data['title'], $data['shortDescription'], $data['description'], $data['price'],$data['others'],$data['tax'],$data['total'], $data['properties'], $data['time_period'], $image_name, $Date, 'YES');
                 if($this->general_model->addInfo_Simple($DbFieldsAry, $InfoAry, $this->Table)){
 
                     $activityId = $this->general_model->getSingleValue($data['title'], 'title', 'ID', $this->Table);
                     $this->general_model->addAgentActivity($agentId, $this->Table, $activityId, 'added new payment', $Date, $Time);
                     setMessage('success_message', 'Payment Plan added successfully!');
-                    redirect(base_url().'admin/payment', 'refresh');
+                    redirect(base_url().'admin/pvcpayment', 'refresh');
                 }
                 else{
                     setMessage('error_message', 'Unable to perofrm this operation, please try again later!');
@@ -291,7 +291,7 @@ class Pvcpayment extends CI_Controller {
             $data['description'] = $this->input->post('description');
             $data['picture'] = $this->input->post('picture');
             $data['shortDescription'] = $this->input->post('shortDescription');
-            $data['price'] = $this->input->post('price');
+            $data['price'] = $this->input->post('pvcprice');
             $data['others'] = $this->input->post('others');
             $data['tax'] = $this->input->post('tax');
             $data['total'] = $this->input->post('total');
@@ -322,8 +322,8 @@ class Pvcpayment extends CI_Controller {
                 }
 
                 if($isValid){
-                    $updateDbFieldsAry = array('agentId', 'title', 'shortDescription', 'description', 'price', 'properties',  'time_period','picture');
-                    $updateInfoAry = array($this->session->userdata('agentId'), $data['title'], $data['shortDescription'], $data['description'], $data['price'], $data['properties'], $data['time_period'], $image_name);
+                    $updateDbFieldsAry = array('agentId', 'title', 'shortDescription', 'description', 'price','others','tax','total', 'properties',  'time_period','picture');
+                    $updateInfoAry = array($this->session->userdata('agentId'), $data['title'], $data['shortDescription'], $data['description'], $data['price'],$data['others'],$data['tax'],$data['total'], $data['properties'], $data['time_period'], $image_name);
                     $this->general_model->updateInfo_Simple($ID, 'ID', $updateDbFieldsAry, $updateInfoAry, $this->Table);
 
                     $this->general_model->addAgentActivity($this->session->userdata('agentId'), $this->Table, $ID, 'updated link', getCurrentDate(), getCurrentTime());
@@ -400,7 +400,7 @@ class Pvcpayment extends CI_Controller {
                 break;
         }
 
-        redirect(base_url().'admin/payment/p/'.$page, 'refresh');
+        redirect(base_url().'admin/pvcpayment/p/'.$page, 'refresh');
     }
 
 
@@ -426,7 +426,7 @@ class Pvcpayment extends CI_Controller {
 
         if($ID == NULL || $status == NULL || $page == NULL){
             setMessage('error_message', 'Unable to change status, something went wrong from your side. Please try again later with proper procedure!');
-            redirect(base_url().'admin/payment', 'refresh');
+            redirect(base_url().'admin/pvcpayment', 'refresh');
         }
 
         if($status == 'YES'){
@@ -442,7 +442,7 @@ class Pvcpayment extends CI_Controller {
 
         $this->general_model->addAgentActivity($this->session->userdata('agentId'), $this->Table, $ID, 'changed status', getCurrentDate(), getCurrentTime());
 
-        redirect(base_url().'admin/payment/p/'.$page,'refresh');
+        redirect(base_url().'admin/pvcpayment/p/'.$page,'refresh');
     }
 }
 /* End of file welcome.php */

@@ -16,6 +16,7 @@
 
 <script type="text/javascript" src="<?=base_url()?>btPublic/admin/js/payment.js"></script>
 <script type="text/javascript" src="<?=base_url()?>btPublic/venders/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="<?=base_url()?>btPublic/js/vendor/jquery-3.2.1.min.js"></script>
 
 </head>
 
@@ -47,32 +48,32 @@
 
             	<label>Title: *</label>
                 <div class="clear"></div>
-            	<input type="text" name="title" id="title" class="field2" value="<?=$title?>" onkeypress="claerMessage();" />
+            	<input type="text" name="title" id="title" class="field2" value="<?=$title?>" onkeypress="claerMessage();" readonly/>
                 <?php echo form_error('title', '<div class="error" id="titleError">', '</div>');?>
                	<div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Price (Plan Charges): *</label>
                 <div class="clear"></div>
-            	<?php echo $site_currency;?> <input type="text" name="price" id="price" class="field2" value="<?=$price?>" required />
+            	<?php echo $site_currency;?> <input type="number" name="pvcprice" id="pvcprice" class="field2" value="<?=$price?>" required />
                	<div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Packaging,Handling and Postal Charges *</label>
                 <div class="clear"></div>
-                <input type="text" name="others" id="others" class="field2" value="<?=$price?>" required />
+                <input type="number" name="others" id="others" class="field2" value="<?=$others?>" required />
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Tax (in %) *</label>
                 <div class="clear"></div>
-                <input type="text" name="tax" id="tax" class="field2" value="<?=$price?>" required />
+                <input type="number" name="tax" id="tax" class="field2" value="<?=$tax?>" required />
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
                 <label>Total *</label>
                 <div class="clear"></div>
-                <input type="text" name="total" id="total" class="field2" value="<?=$price?>" required />
+                <input type="text" name="total" id="total" class="field2" value="<?=$total?>" required readonly/>
                 <div class="pixel_space3"></div>
                 <div class="clear"></div>
 
@@ -90,7 +91,7 @@
                	<div class="pixel_space3"></div>
                 <div class="clear"></div>-->
 
-                <label>Short Description: </label>
+   <!--              <label>Short Description: </label>
                 <div class="clear"></div>
                 <textarea name="shortDescription" id="shortDescription" rows="6" cols="100"><?=$shortDescription?></textarea>
                 <div class="pixel_space3"></div>
@@ -99,7 +100,7 @@
                 <label>Description / Details: </label>
                 <div class="clear"></div>
                 <textarea name="description" id="description" rows="15" cols="107"><?=$description?></textarea>
-				<script type="text/javascript" src="<?php echo base_url();?>btPublic/venders/ckeditor/ckeditor.js"></script>
+				<script type="text/javascript" src="<?php echo base_url();?>btPublic/venders/ckeditor/ckeditor.js"></script> -->
 <link href="<?php echo base_url();?>btPublic/venders/ckeditor/contents.css" type="text/css" />
 <?php $path = base_url().'btPublic/venders/ckfinder/';//realpath(APPPATH . '../venders/').'/ckfinder/';
 //echo $path = realpath(APPPATH . '../venders/').'ckfinder/';
@@ -164,4 +165,15 @@ filebrowserFlashUploadUrl : '<?php echo $path; ?>core/connector/php/connector.ph
 </body>
 
 </html>
+<script>
+    $('#pvcprice,#others,#tax').on('keyup',function(event) {
+        var tax = isNaN(parseInt($('#tax').val())) ? 0 : parseInt($('#tax').val());
+        var pvcprice = isNaN(parseInt($('#pvcprice').val())) ? 0 : parseInt($('#pvcprice').val());
+        var others = isNaN(parseInt($('#others').val())) ? 0 : parseInt($('#others').val());
+        var total = pvcprice+others
+        var gst = (total*tax)/100
+        var totalWithtax = gst+total
+        $('#total').val(totalWithtax)
+    });
 
+</script>

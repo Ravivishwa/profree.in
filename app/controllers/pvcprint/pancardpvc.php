@@ -1,16 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Aadhaarpvc extends CI_Controller {
+class Pancardpvc extends CI_Controller {
 	function __construct(){
 		
 		parent::__construct();
 	}
 	
 	public function index(){
-		$data['heading'] = "AADHAR PVC CARD PRINT";	
-		$data['service'] = "AADHAR PVC Print";	
+		$data['heading'] = "PANCARD PVC CARD PRINT";	
+		$data['service'] = "PANCARD PVC Print";	
 		$this->load->view('pvcprint/aadharpvc_view',$data);
-	}		
+	}	
 	
 	public function pageNotFound(){			
 		redirect(base_url(), 'refersh');	

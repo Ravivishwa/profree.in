@@ -19,13 +19,13 @@
     <div class="rightbar">
 
         	<div class="heading" style="float:left;"><?=$heading?></div>
-
+<!-- 
             <div style="float:right; padding-top:20px;">
 
             	<a href="<?=base_url().'admin/pvcpayment/add'?>" class="top_link"><img src="<?=base_url()?>btPublic/admin/images/icons-big/add-large.png" width="24" height="24" />Add Payment Plan</a>
 
-            </div>
-
+            </div> -->
+<!-- 
             <div class="search_DIV">
 
             	<?php
@@ -36,7 +36,7 @@
 
 				?>
 
-            </div>
+            </div> -->
 
             <div class="clear"></div>
 
@@ -63,7 +63,7 @@
 			?>
 
             	<form id="FRM_ACTIVE_ALL" action="<?=base_url().'admin/pvcpayment/performAction/'.$page?>" method="post">
-
+<!-- 
             	<div class="grid-bg">
 
 
@@ -86,7 +86,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
 
             	<div class="grid-head" style="background:#f4f1f1;">
 
@@ -103,7 +103,7 @@
 <!---->
 <!--                <div class="grid-data" style="width:90px; color:#000;"><strong>Status</strong></div>-->
 
-                <div class="grid-data" style="color:#000;"><strong>Actions</strong></div>
+                <div class="grid-data" style="color:#000;"><strong>Edit</strong></div>
 
             </div>
 
@@ -135,11 +135,11 @@
 
                         <div class="grid-data">
 
-                            <div style="float:left; padding-right:7px;"><a href="<?=base_url().'admin/pvcpayment/update/'.$row->ID.'/'.$page?>" title="Edit / Update..."><img src="<?=base_url()?>btPublic/admin/images/edit.png" style="padding-top:3px;" /></a></div>
-
+                            <div style="float:left; padding-left: 10px;"><a href="<?=base_url().'admin/pvcpayment/update/'.$row->ID.'/'.$page?>" title="Edit / Update..."><img src="<?=base_url()?>btPublic/admin/images/edit.png" style="padding-top:3px;" /></a></div>
+<!-- 
                             <div style="float:left;"> | </div>
 
-                            <div style="float:left; padding-left:7px;"><a href="javascript: void(0);" title="Remove..." onclick="deleteEntry('<?=base_url().'admin/pvcpayment/delete/'.$row->ID.'/'.$page?>')"><img src="<?=base_url()?>btPublic/admin/images/delete.png" style="margin-top:3px;" /></a></div>
+                            <div style="float:left; padding-left:7px;"><a href="javascript: void(0);" title="Remove..." onclick="deleteEntry('<?=base_url().'admin/pvcpayment/delete/'.$row->ID.'/'.$page?>')"><img src="<?=base_url()?>btPublic/admin/images/delete.png" style="margin-top:3px;" /></a></div> -->
 
                         </div>
 
@@ -157,7 +157,7 @@
 
 
 
-            	<div class="grid-bg">
+ <!--            	<div class="grid-bg">
 
                 <ul>
 
@@ -177,7 +177,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
 
             </form>
 

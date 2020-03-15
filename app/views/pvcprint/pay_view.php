@@ -6,24 +6,24 @@
 		<!-- Page Conent -->
 	   
 		<div class="container pb-5 ">
-			 <h2 class="text-center aadhar-content pt-5 pb-5" ><u>PAY FOR AADHAR PVC CARD PRINT</u></h2>
+			 <h2 class="text-center aadhar-content pt-5 pb-5" ><u>PAY FOR <?=$service?></u></h2>
 			<table class="table table-striped ">
 				<tbody>
 					<tr class="table-light ">
 						<th scope="row">Printing Charge</th>
-			   			<td id="pay-table">50 ₹ </td>
+			   			<td id="pay-table"><?=$price?>₹ </td>
 					</tr>
 					<tr class="table-light">
 						<th scope="row">Packing, Handling And Postal Charge</th>
-						<td id="pay-table">60 ₹</td>
+						<td id="pay-table"><?=$others?> ₹</td>
 				    </tr>
 					<tr class="table-light">
-						<th scope="row">Tax 18%</th>
-						<td id="pay-table">21 ₹</td>
+						<th scope="row">Tax</th>
+						<td id="pay-table"><?=$tax?> %</td>
 					</tr>
 					<tr class="table-active">
 						<th scope="row">Total</th>
-						<td id="pay-table">131 ₹</td>
+						<td id="pay-table"><?=$total?> ₹</td>
 					</tr>
 				</tbody>
 			</table>
