@@ -8,7 +8,7 @@
 
 **********************************************************************************/
 /**************************************************************
-	
+
 	STYLESHEET INDEXING
 	|
 	|
@@ -16,27 +16,27 @@
 	|	|
 	|	|___ Reset Styles
 	|	|___ Typography Styles
-	|	|___ Helper Class	
+	|	|___ Helper Class
 	|
 	|
 	|___Elements Styles
-	|	|___ Button Styles 
-	|	|___ Section Title Styles 
+	|	|___ Button Styles
+	|	|___ Section Title Styles
 	|	|___ Bars Styles
-	|	|___ Slider Elements Styles 
-	|	|___ Social Icons Styles 
+	|	|___ Slider Elements Styles
+	|	|___ Social Icons Styles
 	|	|___ Breadcrumb Styles
-	|	|___ Pagination Style 
-	|	|___ Widget Styels 
+	|	|___ Pagination Style
+	|	|___ Widget Styels
 	|	|___ Pricebox
 	|
 	|
 	|___Blocks Styles
-	|	|___ Header Styles 
+	|	|___ Header Styles
 	|	|___ Navigation Styles
 	|	|___ Banner Styles
-	|	|___ About Area 
-	|	|___ Features area styles 
+	|	|___ About Area
+	|	|___ Features area styles
 	|	|___ Service Area
 	|	|___ Funfact Area
 	|	|___ Testimonial Styles
@@ -790,21 +790,21 @@ Helper Class
 
 /* Background Image */
 .bg-image--1 {
-  background-image: url(images/bg/1.jpg);
+  background-image: url(images/bg/home1.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 68%;
   background-position: center center; }
 
 .bg-image--2 {
-  background-image: url(images/bg/2.jpg);
+  background-image: url(images/bg/home2.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 68%;
   background-position: center center; }
 
 .bg-image--3 {
-  background-image: url(images/bg/3.jpg);
+  background-image: url(images/bg/home3.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 68%;
   background-position: center center; }
 
 .bg-image--4 {
@@ -1237,7 +1237,7 @@ button.plyr__play-large {
 Elements Styles
 ********************/
 /**
-Button Styles 
+Button Styles
 */
 a.cr-btn, button.cr-btn, .cr-btn {
   display: inline-block;
@@ -5455,7 +5455,7 @@ Footer Styles
 
 
 .aadhar-label {
-  font-weight:bold; 
+  font-weight:bold;
 }
 .aadhar-content{
   font-size: 1.3rem;
@@ -5469,4 +5469,9 @@ Footer Styles
 
 #pay-table {
   border-left: 5px solid #808080;
+}
+
+
+.slick-list{
+  height: 473px !important;
 }

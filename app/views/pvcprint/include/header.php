@@ -26,12 +26,12 @@
 	<!-- Modernizer js -->
 	<!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
 	<link href="<?=base_url().'btPublic/html/'?>css/font-awesome.css" rel="stylesheet">
-	<script src="<?=base_url().'btPublic/js/vendor/modernizr-3.5.0.min.js'?>"></script> 	
+	<script src="<?=base_url().'btPublic/js/vendor/modernizr-3.5.0.min.js'?>"></script>
 	<link href="<?=base_url().'btPublic/html/'?>css/plugins.css" rel="stylesheet">
 	<link href="<?=base_url().'btPublic/html/'?>css/custom.css" rel="stylesheet">
 	<link href="<?=base_url().'btPublic/html/'?>fstyle.css" rel="stylesheet">
 	<link href="<?=base_url().'btPublic/html/'?>css/font-awesome.css" rel="stylesheet">
-	
+
 </head>
 
 <body>
@@ -103,7 +103,7 @@
 										</li>
 									</ul>
 								</li>
-								
+
 								<li>
 									<a href="contact.html">CONTACT</a>
 								</li>
@@ -127,68 +127,25 @@
 			</div>
 			<!--// Header Bottom Area -->
 
-		</header>	
+		</header>
 
-		
+
 		<!-- Top Banner -->
 		<div class="banner-area">
 			<div class="banner banner-slider-active">
 
 				<!-- Single Banner -->
-				<div class="banner__single bg-image--1" data-black-overlay="6">
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-7 col-lg-9">
-								<div class="banner__single__content">
-									<h1>WE ARE EXPERT IN <span class="color--theme">BUSINESS CONSULTATION</span></h1>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi tenetur suscipit voluptatibus
-										iure culpa recusandae nisi dignissimos.</p>
-									<a href="contact.html" class="cr-btn">
-										<span>Contact Now</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="banner__single bg-image--1">
 				</div>
 				<!-- //Single Banner -->
 
 				<!-- Single Banner -->
-				<div class="banner__single bg-image--2" data-black-overlay="6">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-xl-9 col-lg-11">
-								<div class="banner__single__content text-center">
-									<h1><span class="color--theme">FINANCIAL CONSULTING</span> EXPERT</h1>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi tenetur suscipit voluptatibus
-										iure culpa recusandae nisi dignissimos.</p>
-									<a href="contact.html" class="cr-btn">
-										<span>Contact Now</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="banner__single bg-image--2">
 				</div>
 				<!-- //Single Banner -->
 
 				<!-- Single Banner -->
-				<div class="banner__single bg-image--3" data-black-overlay="6">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-xl-9 col-lg-11">
-								<div class="banner__single__content text-center">
-									<h3>ARE YOU WORRIED ABOUT YOUR BUSINESS?</h3>
-									<h1>WE ARE EXPERT IN <span class="color--theme">CONSULTING</span></h1>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi tenetur suscipit voluptatibus
-										iure culpa recusandae nisi dignissimos.</p>
-									<a href="contact.html" class="cr-btn">
-										<span>Contact Now</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="banner__single bg-image--3" >
 				</div>
 
 			</div>

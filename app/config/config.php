@@ -15,8 +15,8 @@
 |
 */
 
-// $config['base_url']	= 'http://profree.in/';
-$config['base_url']	= 'http://localhost/profree_pfd/';
+ $config['base_url']	= 'http://profree.in/';
+//$config['base_url']	= 'http://rk.localhost/profree_pfd/';
 
 /*
 |--------------------------------------------------------------------------

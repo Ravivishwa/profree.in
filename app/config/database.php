@@ -69,11 +69,8 @@ $db['DevelopmentPhase']['stricton'] = FALSE;
 
 
 $db['LiveSite']['hostname'] = 'localhost';
-// $db['LiveSite']['username'] = 'profree_pfd';
-$db['LiveSite']['username'] = 'root';
-$db['LiveSite']['password'] = '';
-// $db['LiveSite']['password'] = 'wQA6(n)_Sy^D';
-$db['LiveSite']['database'] = 'profree_pfd';
+$db['LiveSite']['username'] = 'profree_pfd';
+$db['LiveSite']['password'] = 'wQA6(n)_Sy^D';
 $db['LiveSite']['dbdriver'] = 'mysqli';
 $db['LiveSite']['dbprefix'] = '';
 $db['LiveSite']['pconnect'] = TRUE;

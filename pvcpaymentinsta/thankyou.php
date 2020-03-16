@@ -19,15 +19,15 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-    setTimeout(
-  function()
-  {
-    window.location.href="http://profree.in/property/add";
-  }, 5000);
-
-
-</script>
+<!--<script>-->
+<!--    setTimeout(-->
+<!--  function() -->
+<!--  {-->
+<!--    window.location.href="http://profree.in/property/add";-->
+<!--  }, 5000);-->
+<!--    -->
+<!--    -->
+<!--</script>-->
 
 
   </head>
@@ -47,7 +47,14 @@
 
 include 'src/instamojo.php';
 $userid=$_GET['userid'];
-$plan_id=$_GET['plan_id'];
+//$plan_id=$_GET['plan_id'];
+//var_dump($_GET);die;
+ $request_name=$_GET["request_name"] ? $_GET["request_name"] :'';
+ $request_password=$_GET["request_password"] ? $_GET["request_password"]:'';
+ $request_address=$_GET["request_address"] ?$_GET["request_address"] :'';
+ $file_name=$_GET["file_name"] ? $_GET["file_name"] :'';
+ $phone=$_GET["phone"] ? $_GET["phone"] :'';
+ $service=$_GET["service"] ? urldecode($_GET["service"]) :'';
 
 //$api = new Instamojo\Instamojo('bcf037cfb7eac37da1fdc8712c7b42b4', '48f369a4d8742428ee0df7c9c67e6225','https://instamojo.com/api/1.1/');
 
@@ -64,14 +71,14 @@ if($paymentStatus!="Failed"){
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
         curl_setopt($ch, CURLOPT_HTTPHEADER,
-                    array("X-Api-Key:bcf037cfb7eac37da1fdc8712c7b42b4",
-                  "X-Auth-Token:48f369a4d8742428ee0df7c9c67e6225"));
+                    array("X-Api-Key:test_7ff71a1f5df487adabdf2ca8002",
+                  "X-Auth-Token:test_f3afa7595e4e12ea4af403ea72c"));
         $response = curl_exec($ch);
         curl_close($ch);
         echo '<h3 style="color:#6da552">Thank You, Payment success!!</h3>';
-        echo '<pre>';
-        print_r(json_decode($response,true));
-        echo '</pre>';
+//        echo '<pre>';
+//        print_r(json_decode($response,true));
+//        echo '</pre>';
         //die();?>
 
 
@@ -94,14 +101,21 @@ if($paymentStatus!="Failed"){
         $password = "wQA6(n)_Sy^D";
         $dbname = "profree_pfd";
 
+//    $servername = "localhost";
+//    $username = "root";
+//    $password = "";
+//    $dbname = "profree_pfd";
+
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-
-       $insert_payment_SQL="INSERT INTO `tbl_user_payment` (`ID`, `user_id`, `plan_id`, `date`, `status`, `data`) VALUES (NULL,".$userid.",".$plan_id.", CURRENT_TIMESTAMP, 'YES','".$response_encoded_value."')";
+//    CURRENT_TIMESTAMP
+//       $insert_payment_SQL="INSERT INTO `tbl_user_payment` (`ID`, `user_id`, `plan_id`, `date`, `status`, `data`) VALUES (NULL,".$userid.",".$plan_id.", CURRENT_TIMESTAMP, 'YES','".$response_encoded_value."')";
+       $insert_payment_SQL="INSERT INTO `tbl_pvcprint_details` (`id`, `service`, `user_id`, `name`, `contact`, `address`,`password`,`filepath`) VALUES (NULL,'".$service."','".$userid."','".$request_name."','".$phone."','".$request_address."','".$request_password."','".$file_name."')";
+//        echo $insert_payment_SQL;die;
 
         if ($conn->query($insert_payment_SQL) === TRUE) {
             echo "Record updated successfully";
@@ -110,13 +124,13 @@ if($paymentStatus!="Failed"){
         }
 
 
-      $sql = "UPDATE tbl_agents SET plan_id=".$plan_id." WHERE ID=".$userid;
-
-        if ($conn->query($sql) === TRUE) {
-            echo "Record updated successfully";
-        } else {
-            echo "Error updating record: " . $conn->error;
-        }
+//      $sql = "UPDATE tbl_agents SET plan_id=".$plan_id." WHERE ID=".$userid;
+//
+//        if ($conn->query($sql) === TRUE) {
+//            echo "Record updated successfully";
+//        } else {
+//            echo "Error updating record: " . $conn->error;
+//        }
 
         $conn->close();
 
@@ -133,14 +147,14 @@ if($paymentStatus!="Failed"){
 
 
 
-    <script>
-    setTimeout(
-  function()
-  {
-    window.location.href="http://profree.in/payment";
-  }, 3000);
-
-    </script>
+<!--    <script>-->
+<!--    setTimeout(-->
+<!--  function()-->
+<!--  {-->
+<!--    window.location.href="http://profree.in/payment";-->
+<!--  }, 3000);-->
+<!---->
+<!--    </script>-->
 
 <?php
 }

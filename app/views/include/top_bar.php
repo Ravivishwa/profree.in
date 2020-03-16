@@ -2,9 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4"><a href="<?=base_url()?>property/add">Post a New Property</a></div>
-            <div class="col-md-8">            	
+            <div class="col-md-8">
                 <?php
 				if(isLogin()){
+					echo '<a href="'.base_url().'pvcprint">PVC PRINT</a>';
 					echo '<a href="'.base_url().'dashboard">Dashboard</a>';
 					if(isSuperAdmin()){
 						echo '<a href="'.base_url().'admin/agents/update/1">Change Profile Settings</a>';

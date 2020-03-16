@@ -104,6 +104,8 @@ if(isSuperAdmin()){
 
         	<li><a href="<?=base_url()?>admin/pvcpayment" <?=selectLink('pvcpayment', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/settings.png" />PVC Print Settings</a></li>
 
+        	<li><a href="<?=base_url()?>admin/pvcrequests" <?=selectLink('pvcrequests', $pageName)?> ><img src="<?=base_url()?>btPublic/admin/images/icons-short/settings.png" />PVC Requests</a></li>
+
         <?php
 
 		}
